@@ -6,7 +6,7 @@
 }
 
 body.auth-body{
-    background:linear-gradient(135deg,#020617,#1d4ed8,#2563eb);
+    background:linear-gradient(135deg,#0f172a,#1e293b,#334155);
     height:100vh;
     display:flex;
     justify-content:center;
@@ -72,7 +72,7 @@ textarea.form-control{
     width:260px;
     height:100vh;
     position:fixed;
-    background:linear-gradient(180deg,#020617,#1e40af,#2563eb);
+    background:linear-gradient(180deg,#111827,#1f2937,#334155);
     color:white;
     padding:35px 25px;
     box-shadow:8px 0 25px rgba(0,0,0,0.15);
@@ -134,11 +134,10 @@ textarea.form-control{
     transform:translateY(-6px);
 }
 
-.stat-card:nth-child(1){ background:linear-gradient(135deg,#2563eb,#1d4ed8); }
-.stat-card:nth-child(2){ background:linear-gradient(135deg,#0f766e,#14b8a6); }
-.stat-card:nth-child(3){ background:linear-gradient(135deg,#7c3aed,#9333ea); }
-.stat-card:nth-child(4){ background:linear-gradient(135deg,#dc2626,#ef4444); }
-
+.stat-card:nth-child(1){ background:#ffffff; color:#111827; border-left:6px solid #1e40af; }
+.stat-card:nth-child(2){ background:#ffffff; color:#111827; border-left:6px solid #0f766e; }
+.stat-card:nth-child(3){ background:#ffffff; color:#111827; border-left:6px solid #7c3aed; }
+.stat-card:nth-child(4){ background:#ffffff; color:#111827; border-left:6px solid #dc2626; }
 .stat-card h4{
     font-size:18px;
     margin-bottom:15px;
@@ -178,4 +177,16 @@ textarea.form-control{
     color:white;
     font-size:12px;
     margin-top:10px;
+}
+
+.user-badge{
+    position:absolute;
+    right:40px;
+    top:35px;
+    background:white;
+    padding:10px 18px;
+    border-radius:30px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    font-weight:600;
+    color:#334155;
 }
