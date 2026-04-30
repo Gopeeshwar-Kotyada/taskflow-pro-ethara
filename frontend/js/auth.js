@@ -1,4 +1,4 @@
-const api = "http://localhost:5000/api/auth";
+const api = "https://taskflow-pro-ethara-production.up.railway.app/api/auth";
 
 function showLogin(){
     document.getElementById("loginForm").style.display="block";
