@@ -1,156 +1,212 @@
-# 🚀 Ethara TaskFlow Suite
+# Ethara TaskFlow Suite
 
-Ethara TaskFlow Suite is a premium full-stack team collaboration and project management web application developed to streamline project assignment, task monitoring, role-based access control, and overdue performance tracking within organizations.
+Ethara TaskFlow Suite is a full stack web application developed for managing internal team projects, task assignments, and deadline monitoring through a centralized admin dashboard.
 
-This platform enables administrators to manage projects and assign tasks to team members while allowing members to monitor deadlines, track assigned work, and update completion status in real time.
+The purpose of this project is to provide an organized workflow management platform where an administrator can create projects, assign tasks, monitor pending work, and identify overdue activities in real time.
+
+This application was developed as part of the Ethara Full Stack Developer assessment and is fully cloud deployed with separate frontend and backend hosting.
 
 ---
 
-## 🌐 Live Project Links
+## Live Project Links
 
-### Frontend Live Website
-https://taskflow-pro-ethara.netlify.app
+Frontend Live Application:
+https://ethara-taskflow-suite.netlify.app
 
-### Backend API Server
+Backend API Server:
 https://ethara-taskflow-api-production.up.railway.app
 
-### GitHub Repository
-https://github.com/Gopeeshwar-Kotyada/taskflow-pro-ethara
+GitHub Repository:
+https://github.com/Gopeeshwar-Kotyada/ethara-taskflow-suite
 
 ---
 
-## 📌 Project Highlights
+## Key Features
 
-- Secure JWT Authentication System
-- Role Based Login (Admin / Member)
-- Admin Project Creation Dashboard
-- Admin Task Assignment System
-- Member Task Monitoring Panel
-- Overdue Deadline Detection
-- Task Priority Classification
-- Real-Time MongoDB Cloud Storage
-- Fully Responsive Premium UI
-- Cloud Hosted Backend + Frontend Deployment
+* Secure Admin Authentication
+* JWT Based Login Validation
+* Role Based Access Workflow
+* Project Creation and Management
+* Task Assignment and Monitoring
+* Pending / Completed / Overdue Tracking
+* Dashboard Statistics Overview
+* MongoDB Cloud Database Storage
+* REST API Communication
+* Responsive User Interface
+* Production Deployment on Cloud
 
 ---
 
-## 🛠️ Tech Stack Used
+## Technologies Used
 
 ### Frontend
-- HTML5
-- CSS3
-- Vanilla JavaScript
+
+* HTML5
+* CSS3
+* JavaScript
 
 ### Backend
-- Node.js
-- Express.js
+
+* Node.js
+* Express.js
 
 ### Database
-- MongoDB Atlas Cloud
+
+* MongoDB Atlas (NoSQL Cloud Database)
 
 ### Authentication
-- JSON Web Token (JWT)
+
+* JSON Web Token (JWT)
 
 ### Deployment
-- Netlify (Frontend Hosting)
-- Railway (Backend Hosting)
-- GitHub (Version Control)
+
+* Netlify (Frontend Hosting)
+* Railway (Backend Hosting)
+* GitHub (Version Control)
 
 ---
 
-## 👨‍💻 Core Modules
+## Main Functional Modules
 
-### 1. Authentication Module
-Provides secure registration and login for Admin and Member roles using encrypted credentials and JWT token authorization.
+### Authentication Module
 
-### 2. Project Management Module
-Allows administrators to create and manage multiple projects with title, description, and project records stored in MongoDB.
+Provides secure admin registration and login.
+User credentials are validated through backend APIs and JWT token is generated after successful authentication.
 
-### 3. Task Assignment Module
-Enables task creation under projects with due date, priority level, task description, and member assignment details.
+### Dashboard Module
 
-### 4. Dashboard Analytics Module
-Displays:
-- Total Projects
-- Total Tasks
-- Completed Tasks
-- Overdue Tasks
+Displays a summarized overview of:
 
-through live statistical cards for instant performance review.
+* Active Projects
+* Pending Tasks
+* Completed Tasks
+* Deadline Alerts
 
-### 5. Deadline Monitoring Module
-Automatically checks due dates and flags overdue tasks for better workflow management.
+This helps in quickly understanding the current status of all work items.
+
+### Project Management Module
+
+Allows the admin to create new projects with project title and description.
+All created projects are stored dynamically in MongoDB Atlas.
+
+### Task Management Module
+
+Allows task creation under projects with:
+
+* Task title
+* Assignment details
+* Priority level
+* Due date
+* Completion status
+
+### Deadline Monitoring Module
+
+The system automatically checks task due dates and flags overdue tasks inside dashboard alerts.
 
 ---
 
-## 🔐 Demo Login Credentials
+## REST API Endpoints Used
 
-### Admin Login
-Email: admin@gmail.com  
+The frontend communicates with backend through custom Express REST APIs such as:
+
+* `/api/auth/register`
+* `/api/auth/login`
+* `/api/projects/create`
+* `/api/projects/all`
+* `/api/tasks/create`
+* `/api/tasks/all`
+
+These APIs are consumed using JavaScript Fetch requests.
+
+---
+
+## Database Collections
+
+MongoDB Atlas is used to store all application data.
+
+Collections maintained:
+
+* Users Collection
+* Projects Collection
+* Tasks Collection
+
+This ensures proper separation of authentication, project records, and task records.
+
+---
+
+## Demo Credentials
+
+Admin Login:
+
+Email: [admin@gmail.com](mailto:admin@gmail.com)
 Password: admin123
 
 ---
 
-## 📂 Project Folder Structure
+## Local Setup Instructions
 
-taskflow-pro-ethara/
-│
-├── frontend/
-│   ├── index.html
-│   ├── dashboard.html
-│   ├── style.css
-│   ├── auth.js
-│   └── dashboard.js
-│
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   ├── models/
-│   ├── routes/
-│   └── middleware/
-│
-└── README.md
+### Clone the Repository
 
----
+git clone https://github.com/Gopeeshwar-Kotyada/ethara-taskflow-suite.git
 
-## ⚙️ Installation Steps For Local Setup
+### Backend Installation
 
-### Clone Repository
-git clone https://github.com/Gopeeshwar-Kotyada/taskflow-pro-ethara.git
-
-### Backend Setup
-cd backend  
-npm install  
+cd backend
+npm install
 node server.js
 
-### Frontend Setup
-Open frontend/index.html using Live Server extension.
+### Frontend Execution
+
+Open `frontend/index.html` using Live Server.
 
 ---
 
-## 🎯 Future Enhancements
+## Project Folder Structure
 
-- Team Chat Integration
-- File Upload Support
-- Email Notifications
-- Calendar Sync
-- Productivity Reports
-- Dark Mode Dashboard
+ethara-taskflow-suite/
+
+backend/
+├── config/
+├── middleware/
+├── models/
+├── routes/
+├── server.js
+
+frontend/
+├── css/
+├── js/
+├── assets/
+├── index.html
+├── dashboard.html
+├── projects.html
+├── tasks.html
+
+README.md
 
 ---
 
-## 👨‍🎓 Developed For
+## Future Scope
 
-Ethara Internship Full Stack Developer Project Submission
+* Separate Member Dashboard
+* File Upload Attachments
+* Notification Alerts
+* Team Collaboration Messaging
+* Advanced Productivity Reports
 
 ---
 
-## 👨‍💻 Developed By
+## Developed For
+
+Ethara Full Stack Developer Assessment Submission
+
+---
+
+## Developed By
 
 Gopeeshwar Kotyada
 
 ---
 
-## ⭐ Project Status
+## Project Status
 
-Successfully Developed, Cloud Hosted, and Production Deployed.
+Completed, production deployed, and fully functional.
