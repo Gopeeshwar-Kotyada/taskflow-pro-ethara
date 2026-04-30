@@ -17,7 +17,7 @@ app.use('/api/projects', projectRoutes);
 app.use('/api/tasks', taskRoutes);
 
 app.get('/', (req, res) => {
-    res.send("TaskFlow Pro Backend Running...");
+    res.send("Ethara TaskFlow Suite Backend Running...");
 });
 
 const PORT = process.env.PORT || 5000;

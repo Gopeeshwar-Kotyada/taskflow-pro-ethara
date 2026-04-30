@@ -1,4 +1,4 @@
-const api = "https://taskflow-pro-ethara-production.up.railway.app/api/auth";
+const api = "https://ethara-taskflow-api-production.up.railway.app/api/auth";
 
 function showLogin(){
     document.getElementById("loginForm").style.display="block";

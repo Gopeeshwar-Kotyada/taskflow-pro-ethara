@@ -1,6 +1,6 @@
-# 🚀 TaskFlow Pro Ethara
+# 🚀 Ethara TaskFlow Suite
 
-TaskFlow Pro Ethara is a premium full-stack team collaboration and project management web application developed to streamline project assignment, task monitoring, role-based access control, and overdue performance tracking within organizations.
+Ethara TaskFlow Suite is a premium full-stack team collaboration and project management web application developed to streamline project assignment, task monitoring, role-based access control, and overdue performance tracking within organizations.
 
 This platform enables administrators to manage projects and assign tasks to team members while allowing members to monitor deadlines, track assigned work, and update completion status in real time.
 
@@ -12,7 +12,7 @@ This platform enables administrators to manage projects and assign tasks to team
 https://taskflow-pro-ethara.netlify.app
 
 ### Backend API Server
-https://taskflow-pro-ethara-production.up.railway.app
+https://ethara-taskflow-api-production.up.railway.app
 
 ### GitHub Repository
 https://github.com/Gopeeshwar-Kotyada/taskflow-pro-ethara

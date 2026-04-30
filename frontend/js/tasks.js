@@ -6,14 +6,14 @@ async function createTask(){
     const dueDate = document.getElementById("taskDate").value;
     const priority = document.getElementById("taskPriority").value;
 
-    const projectRes = await fetch("https://taskflow-pro-ethara-production.up.railway.app/api/projects/all",{
+    const projectRes = await fetch("https://ethara-taskflow-api-production.up.railway.app/api/projects/all",{
         headers:{ "Authorization":`Bearer ${token}` }
     });
 
     const projects = await projectRes.json();
     const projectId = projects[0]._id;
 
-    const res = await fetch("https://taskflow-pro-ethara-production.up.railway.app/api/tasks/create",{
+    const res = await fetch("https://ethara-taskflow-api-production.up.railway.app/api/tasks/create",{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
@@ -34,7 +34,7 @@ async function createTask(){
 }
 
 async function fetchTasks(){
-    const res = await fetch("https://taskflow-pro-ethara-production.up.railway.app/api/tasks/all",{
+    const res = await fetch("https://ethara-taskflow-api-production.up.railway.app/api/tasks/all",{
         headers:{ "Authorization":`Bearer ${token}` }
     });
 
